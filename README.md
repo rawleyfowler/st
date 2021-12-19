@@ -1,3 +1,6 @@
+## Rawley Fowler's ST build
+This is a customized build of suckless' [st](https://st.suckless.org). For the best experience please check out my build of [dwm](https://gitlab.com/rawleyIfowler/dwm) and my [dotfiles](https://gitlab.com/rawleyIfowler/dotfiles).
+
 st - simple terminal
 --------------------
 st is a simple terminal emulator for X which sucks less.
