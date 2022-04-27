@@ -1,18 +1,13 @@
-## Rawley Fowler's ST build
-This is a customized build of suckless' [st](https://st.suckless.org). For the best experience please check out my build of [dwm](https://gitlab.com/rawleyIfowler/dwm) and my [dotfiles](https://gitlab.com/rawleyIfowler/dotfiles).
+# Rawley Fowler's ST build
+This is a customized build of suckless' [st](https://st.suckless.org). For the best experience please check out my build of [dwm](https://www.github.com/rawleyfowler/dwm) and my [dotfiles](https://www.github.com/rawleyfowler/dotfiles).
 
-st - simple terminal
---------------------
+### st - simple terminal
 st is a simple terminal emulator for X which sucks less.
 
-
-Requirements
-------------
+### Requirements
 In order to build st you need the Xlib header files.
 
-
-Installation
-------------
+### Installation
 Edit config.mk to match your local setup (st is installed into
 the /usr/local namespace by default).
 
@@ -21,9 +16,7 @@ necessary as root):
 
     make clean install
 
-
 Running st
-----------
 If you did not install st with make clean install, you must compile
 the st terminfo entry with the following command:
 
@@ -32,6 +25,4 @@ the st terminfo entry with the following command:
 See the man page for additional details.
 
 Credits
--------
 Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
-
