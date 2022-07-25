@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=14:antialias=true:autohint=true";
-static int borderpx = 4;
+static char *font = "Iosevka Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";
+static int borderpx = 8;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -16,7 +16,7 @@ static int borderpx = 4;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/usr/bin/fish";
+static char *shell = "/usr/bin/bash";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -44,7 +44,7 @@ static unsigned int tripleclicktimeout = 600;
 int allowaltscreen = 1;
 
 /* allow certain non-interactive (insecure) window operations such as:
-   setting the clipboard text */
+	 setting the clipboard text */
 int allowwindowops = 0;
 
 /*
@@ -95,31 +95,31 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#2a2520",
-	"#7d2a2f",
-	"#78997a",
-	"#ebc06d",
-	"#86a3a3",
-	"#b65c60",
-	"#697893",
-	"#c1a78e",
+	"#303030", // 1
+	"#666666", // 2
+	"#7f9f7f", // 
+	"#366060", // 3	
+	"#dfaf8f", // 4
+	"#cccccc", // 5
+	"#cc9393", // 6
+	"#666666", // 8
 
-	/* 8 bright colors */
-	"#4d453e",
-	"#e48b5d",
-	"#78997a",
-	"#ffcf2d",
-	"#9aacce",
-	"#f17c64",
-	"#8e733f",
-	"#ece1d7",
+	"#eeeeee",
+	"#6ca0a3",	
+	"#bfebbf",
+	"#dc8cc3",	
+	"#93e0e3",
+	"#dcdccc",
+	"#dca3a3",
+	"#000000",	
 
+	"#f0dfaf",
+	"#8cd0d3",
+	"#dc8cc3",
+	"#93e0e3",
+	"#ffffff",
 	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+	[256] = "#666666"
 };
 
 
@@ -127,10 +127,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
+unsigned int defaultfg = 8;
 unsigned int defaultbg = 0;
 static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+static unsigned int defaultrcs = 256;
 
 /*
  * Default shape of cursor
@@ -467,6 +467,6 @@ static uint selmasks[] = {
  * of single wide characters.
  */
 static char ascii_printable[] =
-	" !\"#$%&'()*+,-./0123456789:;<=>?"
-	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
-	"`abcdefghijklmnopqrstuvwxyz{|}~";
+" !\"#$%&'()*+,-./0123456789:;<=>?"
+"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
+"`abcdefghijklmnopqrstuvwxyz{|}~";

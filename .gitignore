@@ -1,3 +1,5 @@
 st
 *.o
 *.obj
+*.gz
+*.diff
